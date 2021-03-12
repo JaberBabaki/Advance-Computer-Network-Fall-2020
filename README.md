@@ -4,3 +4,5 @@ This repository contains material and assignment of Internet of Thing Specializa
 * session-01 Introduction and Basic Concepts
 * session-02 Communications and Networking
 * session-03 Application Protocols
+
+* assignment simulation LoRaWAN network

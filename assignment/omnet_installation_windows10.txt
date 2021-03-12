@@ -1,0 +1,40 @@
+1) Download the following file(PLEASE DOWNLOAD ONLY THE MENTIONED VERSION!!!):
+	a: omnetpp-5.2.1-src-windows
+	b: inet-3.6.3-src
+	c: flora-0.8
+
+2) Unzip omnetpp-5.2.1-src-windows to the root of C drive
+
+3) Unzip inet-3.6.3-src and flora-0.8 to sample directory inside the omnetpp-5.2.1 directory
+
+-------------------------------------------------to build simulation libraries:
+
+3) In the config.user file inside the root of omnetpp-5.2.1 folder, change PREFER_CLANG to no; because the flora works with gcc compiler.
+
+4) Open Mingwenv.cmd inside the root of omnetpp-5.2.1 directory.
+
+5) type and then enter: ./configure
+
+6) type and then enter: make
+
+step 5 and 6 takes 10~60 minutes depends on the speed of your Hard disk
+
+7) to run the omnet++ IDE, type : omnetpp
+
+--------------------------------------------------to install flora and inet frameworks
+
+8) Inside omnet IDE, go to: file->import->general->Existing projects into workspace->Browse the inet/flora->finish
+
+9) In the left panel, right click on Inet then click build (takes 3~20 min)
+
+10) In the left panel, right click on Flora then click build (takes 3~20 min)(Make sure the FLoRa project has INET project as a project reference 
+(Project > Properties > Project References))
+
+11) To run FloRa: click on flora in the left panel->simulations-> loRaNetworkTest.ini
+
+right click on the "loRaNetworkTest.ini"->Run As-> Run Configurations -> In the 'Main' panel there is a section named "User Interface",
+
+default value for this section is Qtenv, change it to Tkenv -> then click Run
+
+Step 11 is the most important and key part to run the Flora in windows 10
+
